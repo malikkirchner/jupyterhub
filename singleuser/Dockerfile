@@ -1,9 +1,9 @@
 # Build as jupyterhub/singleuser
 # Run with the DockerSpawner in JupyterHub
 
-ARG BASE_IMAGE=jupyter/base-notebook
+ARG BASE_IMAGE=xelonic/base-notebook
 FROM $BASE_IMAGE
-MAINTAINER Project Jupyter <jupyter@googlegroups.com>
+MAINTAINER xelonic <request@xelonic.com>
 
 ADD install_jupyterhub /tmp/install_jupyterhub
 ARG JUPYTERHUB_VERSION=master
